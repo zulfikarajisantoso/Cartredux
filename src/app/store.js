@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import prodreduce from "../features/Crudslice" 
-import cartaksi from "../features/Cartslice" 
+import keranjangreducer from "../features/Keranjangslice" 
+import userreducer from "../features/Userslice" 
 export const store = configureStore({
   reducer: {
-    product: prodreduce,
-    cart: cartaksi
+    keranjang: keranjangreducer,
+    user: userreducer
   },
 });
